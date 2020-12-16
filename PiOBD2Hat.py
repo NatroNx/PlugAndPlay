@@ -90,4 +90,7 @@ class PiOBD2Hat:
     def setCANRxFilter(self, addr):
         self.sendAtCmd('ATCR' + str(addr))
 
+	def setCANTx(self, addr):
+        self.sendAtCmd('ATCT' + str(addr))
+
 
